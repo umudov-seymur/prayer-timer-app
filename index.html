@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.1.1/dist/accordion.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Prayer Timings</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="text-center text-white mb-5">Prayer Timings</h2>
+
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-9 justify-content-center">
+                <div class="namaz-block shadow-lg">
+                    <div class="namaz-header">
+                        <form method="post" action="#">
+                            <label for="timings" class="font-weight-bold">Baku</label>
+                            <div class="input-group mb-2">
+                                <input class="flatpickr namaz-date-picker form-control" id="timings" type="text" />
+                                <div class="input-group-append">
+                                    <div class="input-group-text">
+                                        <i class="far fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <table class="table table-striped namaz-date-table">
+                        <thead class="thead-dark"></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center mt-4">
+            <div class="col-lg-9">
+                <div class="namaz-times shadow-lg">
+                    <table class="table table-striped namaz-table">
+                        <thead class="thead-dark"></thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
